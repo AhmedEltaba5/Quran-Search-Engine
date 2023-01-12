@@ -22,4 +22,5 @@ Notebook available via kaggle: https://www.kaggle.com/code/ahmednassereltabakh/q
 git clone https://github.com/AhmedEltaba5/Quran-Search-Engine/
 pip install -r requirements.txt
 uvicorn app:app --reload
+http://127.0.0.1:8000/search
 ```
