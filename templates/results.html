@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Quran Search Engine</title>
+        <link href="{{ url_for('templates', path='/style.css') }}" rel="stylesheet">
+    </head>
+    <body>
+        <h1 class="title" >Holy Quran Search Engine</h1>
+        <form method="post">
+            <input type="text" name="query_txt" value="{{ query }}", class="search-box">
+            <input type="submit", value="بحث", class="submit">
+        </form>
+
+        <div class="search-result" >
+            <h2 class="result-title" >Search Results</h2>
+            <hr class="title-line" >
+            {% for row in predictions %}
+            <div class="result">
+                <h3> {{row.ayah_txt}} </h3>
+                <p>ايه رقم {{ row.ayah_num }} سورة {{ row.surah_name }}</p>
+                <hr>
+            </div>
+            {% endfor %}
+        </div>
+
+    </body>
+</html>
