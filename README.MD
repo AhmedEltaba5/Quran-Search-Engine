@@ -19,7 +19,7 @@ Notebook available via kaggle: https://www.kaggle.com/code/ahmednassereltabakh/q
 ## How to Run 
 
 ```
-git colne https://github.com/AhmedEltaba5/Quran-Search-Engine/
+git clone https://github.com/AhmedEltaba5/Quran-Search-Engine/
 pip install -r requirements.txt
 uvicorn app:app --reload
 ```
